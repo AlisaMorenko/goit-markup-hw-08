@@ -1,5 +1,9 @@
 .work {
     padding-bottom: 94px;
+    // какого-то хера уже появляется при 1199, а не при 1200
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .work-list {
