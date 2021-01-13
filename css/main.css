@@ -403,6 +403,8 @@ img {
 
 /* стилизация логотипа в хедере*/
 .logo {
+  display: block;
+  padding: 16px 0px;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -423,42 +425,27 @@ img {
 }
 
 header {
+  position: relative;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ECECEC;
-}
-
-.container.main-nav {
-  position: relative;
-}
-
-.main-nav,
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-  margin-left: 93px;
 }
 
 .nav .link {
   color: #212121;
   text-decoration: none;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .item {
   position: relative;
+  margin-bottom: 40px;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+.site-nav .item:last-child {
+  margin-bottom: 60px;
 }
 
 .nav .link.current {
@@ -467,8 +454,8 @@ header {
 
 .nav .link.current::after {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 0%;
+  bottom: -8px;
   content: "";
   width: 100%;
   height: 4px;
@@ -476,27 +463,20 @@ header {
   border-radius: 2px;
 }
 
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
 .contacts .link {
   color: #757575;
   text-decoration: none;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  justify-content: center;
 }
 
 .contacts .item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 16px;
 }
 
 .contacts p {
   display: block;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .header-contacts-svg {
@@ -522,8 +502,11 @@ header {
 }
 
 .menu-button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
   display: inline-flex;
-  margin: 0px;
+  margin: 10px 15px;
   padding: 0px;
   border: none;
   background-color: transparent;
@@ -541,21 +524,45 @@ header {
   display: none;
 }
 
+.menu-button:hover, .menu-button:focus {
+  color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.icon-cross, .icon-menu {
+  fill: currentColor;
+}
+
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-  height: 393px;
-  background-color: violet;
+  background-color: #ffffff;
   padding: 60px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   text-align: center;
 }
 
-.menu-container.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100vw;
+    height: 393px;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
 }
 
 /* стилицация героя */

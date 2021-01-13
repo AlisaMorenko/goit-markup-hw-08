@@ -1,5 +1,7 @@
 /* стилизация логотипа в хедере*/
 .logo {
+    display: block;
+    padding: 16px 0px;
     color: $primary-black-color;
     font-family: $logo-font;
     font-weight: $bold-font-weight;
