@@ -468,6 +468,7 @@ header {
   text-decoration: none;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .contacts .item:not(:last-child) {
@@ -785,45 +786,13 @@ header {
   margin-left: 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .advantages-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-item {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages-item {
-    width: calc((100% - 8 * 15px) / 4);
-  }
+.advantages-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .advantages-icon {
@@ -837,7 +806,6 @@ header {
 
 .advantages-title {
   color: #212121;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -907,35 +875,22 @@ header {
 
 .staff {
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.staff-list {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 60px 0px;
 }
 
 .staff-item {
-  width: 270px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   text-align: center;
 }
 
-.staff-item:nth-child(4n) {
-  margin-right: 0px;
-}
-
-.staff-item:nth-last-child(-n+4) {
-  margin-bottom: 0px;
+.staff-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .staff-content {
-  padding: 30px 32px;
+  padding: 30px 122px 24px;
 }
 
 .name {
@@ -981,8 +936,7 @@ header {
 
 /* стилизация секции клиентов */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0px;
 }
 
 .clients-list {
@@ -991,17 +945,17 @@ header {
 }
 
 .clients-item {
-  width: 170px;
+  width: 210px;
   height: 90px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.clients-item:nth-child(6n) {
+.clients-item:nth-child(2n) {
   margin-right: 0px;
 }
 
-.clients-item:nth-last-child(-n+6) {
+.clients-item:nth-last-child(-n+2) {
   margin-bottom: 0px;
 }
 
