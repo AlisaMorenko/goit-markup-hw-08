@@ -977,38 +977,28 @@ header {
   fill: currentColor;
 }
 
-/* стилизация секции galary на стр портфолио */
 .galary {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.galary-list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 .card {
-  width: 370px;
-  margin-right: 30px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
-.card:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.card:nth-last-child(-n+3) {
+.card:last-child {
   margin-bottom: 0px;
 }
 
@@ -1018,7 +1008,6 @@ header {
   padding: 20px 24px;
 }
 
-/* выезжающий текст на карточке */
 .thumb {
   position: relative;
   overflow: hidden;
@@ -1075,8 +1064,7 @@ header {
 .galary-text {
   font-size: 16px;
   line-height: 1.87;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .galary-link {
