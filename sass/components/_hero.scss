@@ -1,21 +1,56 @@
-/* стилицация героя */
+// /* стилицация героя */
+// .hero {
+//     background-color: $hero-bg-color;
+//     letter-spacing: $secondary-letter-spacing;
+//     text-align: center;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+
+//     max-width: 1600px;
+//     height: 600px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-image: linear-gradient(
+//     to right,
+//     rgba(47, 48, 58, 0.4),
+//     rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../img/overlay.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// .hero-title {
+//     color: $primary-white-color;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-transform: uppercase;
+
+//     margin-top: 0px;
+//     margin-bottom: 30px;
+// }
+
+
+
+// new styles
+
 .hero {
     background-color: $hero-bg-color;
     letter-spacing: $secondary-letter-spacing;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 0px;
 
     max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/overlay.jpg);
+    height: 400px;
+    margin-left: 0px auto;
+//     background-image: linear-gradient(
+//     to right,
+//     rgba(47, 48, 58, 0.4),
+//     rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../img/overlay.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -24,10 +59,9 @@
 .hero-title {
     color: $primary-white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-transform: uppercase;
-
     margin-top: 0px;
     margin-bottom: 30px;
 }

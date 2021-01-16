@@ -421,6 +421,7 @@ img {
 .footer .logo {
   color: #ffffff;
   display: block;
+  padding: 0px;
   margin-bottom: 20px;
 }
 
@@ -566,18 +567,14 @@ header {
   }
 }
 
-/* стилицация героя */
 .hero {
   background-color: #C4C4C4;
   letter-spacing: 0.06em;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0px;
   max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/overlay.jpg);
+  height: 400px;
+  margin-left: 0px auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -586,8 +583,8 @@ header {
 .hero-title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -1099,6 +1096,7 @@ header {
   line-height: 1.71;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 address {
@@ -1107,7 +1105,7 @@ address {
 
 .street {
   margin-top: 0px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .mail,
@@ -1118,25 +1116,19 @@ address {
 }
 
 .mail {
-  margin-bottom: 9px;
-}
-
-/* ссылки в футере */
-.footer-container {
-  display: flex;
-  align-items: baseline;
+  margin-bottom: 8px;
 }
 
 .adress {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .container-join-us {
-  display: block;
+  margin-bottom: 60px;
 }
 
 .join-us {
-  line-height: 1.17;
+  line-height: 1.14;
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 0px;
@@ -1146,6 +1138,7 @@ address {
 
 .footer-networks {
   display: flex;
+  margin: 0px auto;
   justify-content: space-between;
   width: 206px;
 }
@@ -1166,23 +1159,17 @@ address {
   background-color: #2196F3;
 }
 
-/* подписаться на рассылку */
-.join-form {
-  margin-left: auto;
-  width: 570px;
-}
-
 .join-input {
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2F303A;
-  padding: 14px 16px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  margin-right: 8px;
   color: #ffffff;
 }
 
@@ -1208,7 +1195,6 @@ address {
 }
 
 .icon-send {
-  display: inline-block;
   margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
