@@ -107,7 +107,7 @@ header {
 }
 
 .site-nav .item {
-    position: relative;
+    // position: relative;
     margin-bottom: 40px;
     
     &:last-child {
@@ -116,6 +116,8 @@ header {
 }
 
 .nav .link.current {
+    display: inline-block;
+    position: relative;
     color: $accent-color;
         &::after {
         position: absolute;

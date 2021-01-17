@@ -123,6 +123,10 @@ body {
     letter-spacing: $primary-letter-spacing;
 }
 
+body.modal-open {
+    overflow: hidden;
+  }
+
 /* сброс маркеров у ненумерованных списков*/
 ul {
     list-style: none;
