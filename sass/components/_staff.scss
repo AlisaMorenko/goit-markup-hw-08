@@ -96,7 +96,7 @@
 }
 
 .staff-content {
-    padding: 30px 122px 24px;
+    padding: 30px 30px 24px;
 }
 
 .name {
@@ -117,7 +117,15 @@
 
 .networks {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.social-item {
+    display: block;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }    
+
 }
 
 .social-links {
@@ -127,8 +135,7 @@
     width: 44px;
     height: 44px;
     color: $icon-color;
-    border-radius: 50%;
-
+    border-radius: 50%; 
     transition: background-color 250ms $timing-function, 
     color 250ms $timing-function; 
 

@@ -15,7 +15,7 @@
                 <a href="./index.html" class="logo"><span class="main-logo">Web</span>Studio</a>        
                 
                 <button type="button" 
-                class="menu-button is-open" 
+                class="menu-button" 
                 aria-expanded="false"
                 aria-controls="menu-container"
                 data-menu-button>
@@ -25,7 +25,7 @@
                     </svg>
                 </button>
                 
-                <div class="menu-container is-open" id="menu-container" data-menu>
+                <div class="menu-container" id="menu-container" data-menu>
                     <ul class="site-nav">
                         <li class="item"><a href="./index.html" class="link current">Студия</a></li>
                         <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -189,33 +189,40 @@
                 <h2 class="staff-title">Наша команда</h2>
                 <ul class="staff-list">
                     <li class="staff-item"> 
-                        <img src="./img/img.jpg" alt="фото сотрудника" width="270">
+                        <img 
+                            srcset="
+                            ./img/staff1.jpg,
+                            ./img/staff1@2x.jpg
+                            "
+                            src="./img/staff1.jpg" 
+                            alt="фото сотрудника" 
+                            width="450">
                         <div class="staff-content">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="profession">Product Designer</p>
                             <ul class="networks">
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#instagram-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20px" height="20">
                                             <use href="./img/sprite.svg#linkedin-1"></use>
@@ -226,33 +233,40 @@
                         </div>
                     </li>
                     <li class="staff-item">
-                        <img src="./img/img1.jpg" alt="фото сотрудника" width="270">
+                        <img 
+                            srcset="
+                            ./img/staff2.jpg,
+                            ./img/staff2@2x.jpg
+                            "
+                            src="./img/staff2.jpg" 
+                            alt="фото сотрудника" 
+                            width="450">
                         <div class="staff-content">
                             <h3 class="name">Ольга Репина</h3>
                             <p class="profession">Frontend Developer</p>
                             <ul class="networks">
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#instagram-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20px" height="20">
                                             <use href="./img/sprite.svg#linkedin-1"></use>
@@ -263,33 +277,40 @@
                         </div>
                     </li>
                     <li class="staff-item">
-                        <img src="./img/img2.jpg" alt="фото сотрудника" width="270">
+                        <img 
+                            srcset="
+                            ./img/staff3.jpg,
+                            ./img/staff3@2x.jpg
+                            "
+                            src="./img/staff3.jpg" 
+                            alt="фото сотрудника" 
+                            width="450">
                         <div class="staff-content">
                             <h3 class="name">Николай Тарасов</h3>
                             <p class="profession">Marketing</p>
                             <ul class="networks">
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#instagram-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20px" height="20">
                                             <use href="./img/sprite.svg#linkedin-1"></use>
@@ -300,33 +321,40 @@
                         </div>
                     </li>
                     <li class="staff-item">
-                        <img src="./img/img3.jpg" alt="фото сотрудника" width="270">
+                        <img 
+                            srcset="
+                            ./img/staff4.jpg,
+                            ./img/staff4@2x.jpg
+                            "
+                            src="./img/staff4.jpg" 
+                            alt="фото сотрудника" 
+                            width="450">
                         <div class="staff-content">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p class="profession">UI Designer</p>
                             <ul class="networks">
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#instagram-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20" height="20">
                                             <use href="./img/sprite.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="social-item">
                                     <a href="" class="social-links">
                                         <svg class="soc-links-svg" width="20px" height="20">
                                             <use href="./img/sprite.svg#linkedin-1"></use>

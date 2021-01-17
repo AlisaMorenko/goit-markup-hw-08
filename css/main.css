@@ -558,6 +558,7 @@ header {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 1;
   }
 }
 
@@ -880,7 +881,7 @@ header {
 }
 
 .staff-content {
-  padding: 30px 122px 24px;
+  padding: 30px 30px 24px;
 }
 
 .name {
@@ -901,7 +902,15 @@ header {
 
 .networks {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social-item {
+  display: block;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-links {
