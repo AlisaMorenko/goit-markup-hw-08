@@ -206,6 +206,8 @@
     opacity: 1;
     transition: opacity 250ms $timing-function;
     z-index: 1;
+    padding: 93px 15px;
+    overflow-y: scroll;
   }
 
   .backdrop.is-hidden {
@@ -218,20 +220,10 @@
   }
   
   .modal {
-    display: flex;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    height: 581px;
+    display: flex;    
     background-color: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms $timing-function;
-    margin-left: auto;
-    margin-right: auto;
     padding: 40px;  
 }
 
@@ -264,7 +256,6 @@ fill: currentColor;
     margin-top: 0px;
     margin-bottom: 12px;
     font-size: 20px;
-    line-height: 1.17;
     letter-spacing: $primary-letter-spacing;
     color: $title-text-color;
 }
@@ -358,8 +349,9 @@ fill: currentColor;
 .checkbox-label {
     display: flex;
     align-items: center;
+    font-size: 12px;
     letter-spacing: $primary-letter-spacing;
-    line-height: 1.71;
+    line-height: 1.17;
 
     &::before {
         content: " ";
@@ -368,7 +360,7 @@ fill: currentColor;
         height: 15px;
         border: 2px solid $primary-black-color;
         border-radius: 4px;
-        margin-right: 7px;
+        margin-right: 8px;
 
         .checkbox-input:checked + & {
             background-color: $accent-color;
