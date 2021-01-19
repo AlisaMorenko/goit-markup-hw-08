@@ -150,7 +150,6 @@
 
 .card {
     width: 100%;
-    outline: 1px red solid;
     &:not(:last-child) {
         @media screen and (max-width: 767px){
             margin-bottom: 30px;

@@ -135,14 +135,29 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        display: flex;
+    }
+    .adress {
+        margin-right: 70px;
+    }
+    .join-form {
+        margin-left: auto;
+        width: 570px;   
+    }
 }
 
 address {
     font-style: normal;
 }
 
-.street 
-{
+.street {
     margin-top: 0px;
     margin-bottom: 8px;
 }
@@ -158,8 +173,6 @@ address {
     margin-bottom: 8px;
 }
 
-
-
 @media screen and (min-width: 768px) {
     .basemеnt {
         display: flex;
@@ -168,12 +181,12 @@ address {
     }
 }
 
-.adress {
-    margin-bottom: 60px;
-}
-
+.adress,
 .container-join-us {
-margin-bottom: 60px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
 }
 
 .join-us {
@@ -220,10 +233,6 @@ margin-bottom: 60px;
         
     }
 }
-// .join-form {
-//     margin-left: auto;
-//     width: 570px;
-// }
 
 .join-input {    
     width: 100%;
@@ -236,7 +245,6 @@ margin-bottom: 60px;
     font-size: $secondary-font-size;
     line-height: 1.25;
     letter-spacing: $primary-letter-spacing;
-    // margin-right: 8px;
     color: $primary-white-color;
 
     &::placeholder {
@@ -250,6 +258,13 @@ margin-bottom: 60px;
         margin-left: auto;
         margin-right: auto;
         width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 8px;
+        margin-bottom: 0px;
+        width: 358px;
     }
 }
 
@@ -269,6 +284,6 @@ margin-bottom: 60px;
 }
 
 .icon-send {
-    // display: inline-block;
+    display: inline-block;
     margin-left: 10px;
 }

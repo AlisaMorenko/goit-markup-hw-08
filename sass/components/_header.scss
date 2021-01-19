@@ -113,17 +113,17 @@ header {
     }
 }
 
+.site-nav {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+    }
+}
+
 .nav .link {
     color: $title-text-color;
     text-decoration: none;
     display: block;    
-}
-
-.site-nav {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        margin-left: 93px;
-    }
 }
 
 .site-nav .item:not(:last-child) {
@@ -131,7 +131,7 @@ header {
 
     @media screen and (min-width: 768px) {
         // position: relative;
-        
+        margin-bottom: 0px;
         &:not(:last-child) {
             margin-right: 50px;
         }
@@ -141,8 +141,7 @@ header {
 
 .site-nav .link {
     @media screen and (min-width: 768px) {        
-        padding: 32px 0px;
-        
+        padding: 32px 0px;        
     }
 }
 
@@ -162,8 +161,13 @@ header {
     }
 }
 
-.contacts {
+@media screen and (min-width: 768px) {
+    .nav .link.current::after {
+        bottom: 0%;
+    }
+}
 
+.contacts {
     margin-top: 60px;
 
     & .link {
@@ -176,22 +180,40 @@ header {
 
     & .item:not(:last-child) {
         margin-bottom: 16px;
+        @media screen and (min-width: 768px){
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: 1200px){
+            margin-right: 50px;
+            margin-bottom: 0px;
+        }
     }
 
     & p {
-        display: block;
         margin: 0px;
     }
 
     @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17px;
         margin-top: 0px;
-        margin-left: auto;
+        margin-left: 84px;
+        display: block;        
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+        margin-left: 291px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 }
 
 .header-contacts-svg {
     fill: currentColor;
     margin-right: 10px;
+
 }
 
 .nav .link, 
