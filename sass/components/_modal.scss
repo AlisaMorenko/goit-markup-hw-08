@@ -225,6 +225,20 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;  
+
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 250ms $timing-function;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .close-button {
@@ -256,6 +270,7 @@ fill: currentColor;
     margin-top: 0px;
     margin-bottom: 12px;
     font-size: 20px;
+    line-height: 1.5;
     letter-spacing: $primary-letter-spacing;
     color: $title-text-color;
 }

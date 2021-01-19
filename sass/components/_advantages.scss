@@ -126,13 +126,34 @@
 
 // версия 2
 .advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0px;
+}
+
+.advantages-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .advantages-item:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px){
+        margin-bottom: 30px;
+    }
 }
+
+
+.advantages-item {
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;           
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 15px;           
+    }
+} 
 
 .advantages-icon {
     background-color: $secondary-bg-color;
