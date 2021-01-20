@@ -50,81 +50,10 @@
 // }
 
 
-// версия 1
-
-// .advantages {   
-//     @media screen and (min-width: 480px) {
-//         padding-top: 60px;
-//         padding-bottom: 60px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//         padding-top: 94px;
-//         padding-bottom: 94px;
-//     }
-// }
-
-// .advantages-list {
-//     @media screen and (min-width: 768px) {
-//         display: flex;
-//         flex-wrap: wrap;
-//         margin: -15px;
-//     }
-    
-// }
-
-// .advantages-item {
-
-//     &:not(:last-child) {
-//         @media screen and (max-width: 767px) {
-//             margin-bottom: 30px;
-//         }
-//     }
-    
-//     @media screen and (min-width: 768px) {
-//         width: calc((100% - 4 * 15px) / 2);
-//         margin: 15px;
-           
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//         width: calc((100% - 8 * 15px) / 4);
-        
-//     }
-// }
-
-// .advantages-icon {
-//     background-color: $secondary-bg-color;
-//     margin-bottom: 30px;
-//     height: 120px;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .advantages-title {
-//     color: $title-text-color;
-//     font-weight: $bold-font-weight;
-//     font-size: $primary-font-size;
-//     line-height: 1.14;
-//     text-transform: uppercase;
-//     text-align: center;
-
-//     margin-top: 0px;
-//     margin-bottom: 10px;
-// }
-
-// .advantages-text {
-//     line-height: 1.71;
-
-//     margin-top: 0px;
-//     margin-bottom: 0px;
-// }
 
 
+// новые стили
 
-// версия 2
 .advantages {
     padding: 60px 0px;
 }
