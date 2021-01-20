@@ -206,14 +206,28 @@
                 <h2 class="staff-title">Наша команда</h2>
                 <ul class="staff-list">
                     <li class="staff-item"> 
-                        <img 
-                            srcset="
-                            ./img/staff1.jpg,
-                            ./img/staff1@2x.jpg
+                        <picture>
+                            <source srcset="
+                            ./img/staff1-d.jpg 1x,
+                            ./img/staff1-d@2x.jpg 2x
+                            " 
+                            media="(min-width:1200px)" 
+                            />
+                            <source srcset="
+                            ./img/staff1-t.jpg 1x,
+                            ./img/staff1-t@2x.jpg 2x 
                             "
-                            src="./img/staff1.jpg" 
+                            media="(min-width:768px)" 
+                            />
+                            <source srcset="
+                            ./img/staff1.jpg 1x,
+                            ./img/staff1@2x.jpg 2x 
+                            "
+                             media="(max-width:767px)" />
+                            <img src="./img/staff1.jpg" 
                             alt="фото сотрудника" 
-                            width="450">
+                            />
+                        </picture>
                         <div class="staff-content">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="profession">Product Designer</p>
@@ -250,14 +264,28 @@
                         </div>
                     </li>
                     <li class="staff-item">
-                        <img 
-                            srcset="
-                            ./img/staff2.jpg,
-                            ./img/staff2@2x.jpg
+                        <picture>
+                            <source srcset="
+                            ./img/staff2-d.jpg 1x,
+                            ./img/staff2-d@2x.jpg 2x
+                            " 
+                            media="(min-width:1200px)" 
+                            />
+                            <source srcset="
+                            ./img/staff2-t.jpg 1x,
+                            ./img/staff2-t@2x.jpg 2x 
                             "
-                            src="./img/staff2.jpg" 
+                            media="(min-width:768px)" 
+                            />
+                            <source srcset="
+                            ./img/staff2.jpg 1x,
+                            ./img/staff2@2x.jpg 2x 
+                            "
+                             media="(max-width:767px)" />
+                            <img src="./img/staff2.jpg" 
                             alt="фото сотрудника" 
-                            width="450">
+                            />
+                        </picture>
                         <div class="staff-content">
                             <h3 class="name">Ольга Репина</h3>
                             <p class="profession">Frontend Developer</p>
@@ -294,14 +322,28 @@
                         </div>
                     </li>
                     <li class="staff-item">
-                        <img 
-                            srcset="
-                            ./img/staff3.jpg,
-                            ./img/staff3@2x.jpg
+                        <picture>
+                            <source srcset="
+                            ./img/staff3-d.jpg 1x,
+                            ./img/staff3-d@2x.jpg 2x
+                            " 
+                            media="(min-width:1200px)" 
+                            />
+                            <source srcset="
+                            ./img/staff3-t.jpg 1x,
+                            ./img/staff3-t@2x.jpg 2x 
                             "
-                            src="./img/staff3.jpg" 
+                            media="(min-width:768px)" 
+                            />
+                            <source srcset="
+                            ./img/staff3.jpg 1x,
+                            ./img/staff3@2x.jpg 2x 
+                            "
+                             media="(max-width:767px)" />
+                            <img src="./img/staff3.jpg" 
                             alt="фото сотрудника" 
-                            width="450">
+                            />
+                        </picture>
                         <div class="staff-content">
                             <h3 class="name">Николай Тарасов</h3>
                             <p class="profession">Marketing</p>
@@ -338,14 +380,28 @@
                         </div>
                     </li>
                     <li class="staff-item">
-                        <img 
-                            srcset="
-                            ./img/staff4.jpg,
-                            ./img/staff4@2x.jpg
+                        <picture>
+                            <source srcset="
+                            ./img/staff3-d.jpg 1x,
+                            ./img/staff3-d@2x.jpg 2x
+                            " 
+                            media="(min-width:1200px)" 
+                            />
+                            <source srcset="
+                            ./img/staff3-t.jpg 1x,
+                            ./img/staff3-t@2x.jpg 2x 
                             "
-                            src="./img/staff4.jpg" 
+                            media="(min-width:768px)" 
+                            />
+                            <source srcset="
+                            ./img/staff3.jpg 1x,
+                            ./img/staff3@2x.jpg 2x 
+                            "
+                             media="(max-width:767px)" />
+                            <img src="./img/staff3.jpg" 
                             alt="фото сотрудника" 
-                            width="450">
+                            />
+                        </picture>
                         <div class="staff-content">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p class="profession">UI Designer</p>
