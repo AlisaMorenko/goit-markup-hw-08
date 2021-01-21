@@ -515,6 +515,12 @@ header {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts .link {
+    justify-content: flex-start;
+  }
+}
+
 .contacts .item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -699,6 +705,13 @@ header {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 /* модальное окно */
@@ -956,6 +969,12 @@ header {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-title {
+    text-align: left;
+  }
 }
 
 .advantages-text {
